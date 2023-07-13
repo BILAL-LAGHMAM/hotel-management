@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+
+:root {
+    --primary-pad: 20px;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(28, 21, 21, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+header video {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--primary-pad);
+}
+
+header nav .logo a img {
+    width: 40%;
+}
+
+header nav ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+
+}
+
+header nav div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: white;
+}
+
+header nav div:last-child select {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+
+header nav div:last-child select option {
+    background-color: #b95c47;
+}
+
+header nav div:last-child button {
+    background-color: #b95c47;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: 900;
+    justify-content: center;
+}
+
+header .textContent {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    height: 100vh;
+}
+
+header .textContent button {
+    width: max-content;
+    background-color: #b95c47;
+    padding: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    font-weight: 900;
+    width: 15%;
+}
+
+header img {
+    width: 70px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+header .textContent h2 {
+    font-size: 20px;
+    color: white;
+    letter-spacing: 6px;
+}
+
+header .textContent h1 {
+    font-size: 38px;
+    width: 50%;
+    text-align: center;
+    color: white;
+
+}
